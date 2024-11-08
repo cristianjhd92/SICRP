@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel SICRP</title>
+    <link rel="stylesheet" href="../css/report.css">
+</head>
+<body>
+    <!-- Barra superior azul -->
+    <header></header>
+
+    <!-- Contenedor principal -->
+    <div class="main_container">
+        
+        <!-- Menú de navegación lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li class="menu_item">
+                    <a href="#inicio">
+                        <img src="../img/home_icon.png" alt="Inicio" class="menu_icon">
+                        <span>INICIO</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#reporte">
+                        <img src="../img/report_icon.png" alt="Reporte Cuadrante" class="menu_icon">
+                        <span>REPORTE CUADRANTE</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#cuadrantes">
+                        <img src="../img/quadrant_icon.png" alt="Cuadrantes" class="menu_icon">
+                        <span>CUADRANTES</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#patrullas">
+                        <img src="../img/patrol_icon.png" alt="Patrullas" class="menu_icon">
+                        <span>PATRULLAS</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#escanear">
+                        <img src="../img/scan_qr_icon.png" alt="Escanear QR" class="menu_icon">
+                        <span>ESCANEAR QR</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Contenido Común -->
+        <section class="content">
+            <div class="qr_section transparent">
+                <img src="../img/qr_sicrp.png" alt="QR SICRP" class="qr_image">
+
+                <!-- Tabla que aparece al seleccionar "REPORTE CUADRANTE" -->
+                <div class="data_table" id="reporte_table">
+                    <div class="table_container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>PATRULLA</th>
+                                    <th>CUADRANTE</th>
+                                    <th>UBICACIÓN</th>
+                                    <th>RECORRIDO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Patrulla A</td>
+                                    <td>Cuadrante 1</td>
+                                    <td>Ubicación A</td>
+                                    <td>Recorrido A</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Patrulla B</td>
+                                    <td>Cuadrante 2</td>
+                                    <td>Ubicación B</td>
+                                    <td>Recorrido B</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Patrulla C</td>
+                                    <td>Cuadrante 3</td>
+                                    <td>Ubicación C</td>
+                                    <td>Recorrido C</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Patrulla D</td>
+                                    <td>Cuadrante 4</td>
+                                    <td>Ubicación D</td>
+                                    <td>Recorrido D</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Patrulla E</td>
+                                    <td>Cuadrante 5</td>
+                                    <td>Ubicación E</td>
+                                    <td>Recorrido E</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Patrulla F</td>
+                                    <td>Cuadrante 6</td>
+                                    <td>Ubicación F</td>
+                                    <td>Recorrido F</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Patrulla G</td>
+                                    <td>Cuadrante 7</td>
+                                    <td>Ubicación G</td>
+                                    <td>Recorrido G</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Patrulla H</td>
+                                    <td>Cuadrante 8</td>
+                                    <td>Ubicación H</td>
+                                    <td>Recorrido H</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Patrulla I</td>
+                                    <td>Cuadrante 9</td>
+                                    <td>Ubicación I</td>
+                                    <td>Recorrido I</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <footer>
+                    <img src="../img/shield_El_Rosal.png" alt="Escudo El Rosal" class="escudo_image">
+                </footer>
+
+            </div>
+            
+        </section>
+    
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="../js/report.js"></script>
+</body>
+</html>

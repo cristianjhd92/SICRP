@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SICRP</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- Barra de navegación vacía en la parte superior -->
+    <nav></nav>
+
+    <!-- Contenedor principal que alinea el contenido -->
+    <div class="container">
+        
+        <!-- Sección del código QR -->
+        <div class="qr_section">
+            <!-- Insertar la imagen del código QR-->
+            <img src="../img/qr_sicrp.png" alt="QR SICRP" class="qr_image">
+        </div>
+
+        <!-- Línea divisoria entre el QR y el formulario -->
+        <div class="divider"></div>
+
+        <!-- Sección del formulario de inicio -->
+        <div class="login_section">
+            <!-- Título y subtítulo del formulario -->
+            <div class="header">
+                <!-- Siglas del Sistema -->
+                <h1>SICRP</h1>
+                <hr>
+                <!-- Nombre completo del Sistema -->
+                <h3>Sistema Integrado de Control de Recorridos de Policía</h3>
+            </div>
+            <!-- Formulario de inicio de sesión -->
+            <form class="form_container">
+                <!-- Campos de entrada de patrulla y cuadrante -->
+                <input type="text" id="patrulla" name="patrulla" placeholder="ID PATRULLA">
+                <input type="text" id="cuadrante" name="cuadrante" placeholder="CUADRANTE">
+            </form>
+            <!-- Botón debajo del formulario -->
+            <div class="button_submit">
+                <button type="submit">INGRESAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección del escudo en el pie de página -->
+    <footer>
+        <img src="../img/shield_El_Rosal.png" alt="Escudo El Rosal" class="escudo_image">
+    </footer>
+</body>
+</html>

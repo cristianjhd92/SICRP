@@ -1,0 +1,159 @@
+/* Reset básico de márgenes y rellenos para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación vacía fijada en la parte superior de la página */
+nav {
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    height: 50px; /* Altura de la barra */
+    background-color: #0B7FCE; /* Color azul de la barra */
+    position: fixed; /* Posición fija en la parte superior */
+    top: 0;
+    left: 0;
+}
+
+/* Estilo del cuerpo principal */
+body {
+    font-family: Arial, sans-serif; /* Fuente utilizada */
+    background-color: white; /* Fondo blanco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    padding-top: 50px; /* Espacio para que no se superponga con la barra de navegación */
+}
+
+/* Contenedor principal que organiza el QR y el formulario de forma horizontal */
+div.container {
+    display: flex;
+    justify-content: space-around; /* Espacio entre el QR y el formulario */
+    align-items: center;
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    max-width: 1200px; /* Limita el ancho máximo a 1200px */
+    margin-top: 30px; /* Espacio extra entre la barra de navegación y el contenido */
+    height: calc(100vh - 100px); /* Ajusta la altura total restando la barra de navegación */
+    position: relative;
+}
+
+/* Sección del QR */
+div.qr_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tamaño de la imagen del QR, más grande */
+.qr_image {
+    width: 300px;
+    height: 300px;
+}
+
+/* Divider (línea divisoria vertical entre el QR y el formulario) */
+div.divider {
+    height: 300px; /* Altura de la línea igual al tamaño del QR */
+    width: 2px; /* Ancho de la línea */
+    background-color: #0B7FCE; /* Color azul de la línea */
+}
+
+/* Sección del formulario de inicio */
+div.login_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido del formulario a la izquierda */
+    justify-content: center;
+    padding: 20px;
+    width: 350px; /* Ancho de la sección del formulario */
+}
+
+/* Encabezado del formulario */
+div.header {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+div.header h1 {
+    font-size: 48px; /* Tamaño de la fuente para "SICRP" */
+    color: #0B7FCE;
+    text-align: left;
+}
+
+div.header hr {
+    border: 0; /* Elimina el borde predeterminado */
+    height: 2px; /* Altura de la línea */
+    background-color: #0B7FCE; /* Color azul de la línea */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+div.header h3 {
+    font-size: 18px; /* Tamaño del subtítulo */
+    color: black;
+    text-align: left; /* Alineado a la izquierda */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-weight: normal; /* Sin negrita */
+}
+
+/* Formulario */
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    background-color: #0B7FCE;
+    padding: 20px; /* Relleno interno del cuadro */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin bordes */
+}
+
+.form_container input {
+    width: 100%; /* El campo de entrada ocupa todo el ancho disponible */
+    padding: 10px; /* Relleno interno de los campos de texto */
+    margin-bottom: 15px; /* Espacio inferior entre los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: white;
+    color: black; /* Texto en negro */
+}
+
+/* Contenedor del botón "INGRESAR" */
+.button_submit {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    margin-top: 10px; /* Margen superior para separarlo del formulario */
+}
+
+.button_submit button {
+    width: 200px; /* Botón más alargado */
+    padding: 12px; /* Relleno interno del botón */
+    background-color: #0B7FCE; /* Color azul del botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+}
+
+/* Efecto hover cuando el usuario pasa el ratón sobre el botón */
+.button_submit button:hover {
+    background-color: #005a94; /* Azul más oscuro */
+    color: white; /* Mantiene el texto en blanco */
+}
+
+/* Footer donde se encuentra el escudo */
+footer {
+    position: absolute; /* Posicionado de forma absoluta */
+    bottom: 20px; /* A 20px del fondo de la página */
+    right: 20px; /* A 20px del borde derecho */
+}
+
+/* Tamaño de la imagen del escudo */
+.escudo_image {
+    width: 100px; /* Anchura de la imagen del escudo */
+}
